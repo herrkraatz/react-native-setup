@@ -1,0 +1,6 @@
+.DS_Store
+.temp
+.idea
+node_modules
+android
+ios
