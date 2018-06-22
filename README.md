@@ -20,7 +20,8 @@ This tutorial shall help setting up your React Native environment and running yo
 
 *Notes:*
 
-- No Mac needed, but tutorial was created using 
+- No Mac needed, but tutorial was created using
+
     - Mac OS X version High Sierra, 10.13.4 (`sw_vers`)
     - Xcode Version 9.3
     - Node.js version v9.11.1 (`node -v`)
@@ -342,15 +343,17 @@ Testing on your Device:
 
 ## <a id="chapter2"></a>2. Example React Native App with Firebase backend
 
-Great many thanks to Stephen Grider who showed me in his Udemy Course how to 
-setup Firebase and Authentication with his React Native App "Manager" which is the basis of this repo (see links below).
-
-The app is a simple shift manager/planning app which includes
+The following app is a simple shift manager/planning app which includes
 
 - Login/Signup Screen checked against Firebase backend
 - An Employee List
 - Shift Planning Screen
 - Top Navigation
+
+It is based on `react-native-cli`, but can easily be ported to Expo as we don't use any customized React Native Components.
+
+Great many thanks to Stephen Grider who showed in his Udemy Course how to 
+setup Firebase and Authentication with his React Native App "Manager" which is the basis of this repo (see links below).
 
 
 ### <a id="chapter2a"></a>i Clone repository and preparation
