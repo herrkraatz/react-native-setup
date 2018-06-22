@@ -7,8 +7,8 @@ This tutorial shall help setting up your React Native environment and running yo
 
 1. [Getting Started](#chapter1)
     1. [Quickstart with Create React Native App + Expo Client](#chapter1a)
-    2. [Most convenience: Expo Development Server (as GUI or CLI) + Expo Client](#chapter1b)
-    3. [Advanced with react-native-cli + Xcode + Android Studio/Genymotion](#chapter1c)
+    2. [For most convenience: Expo Development Server (as GUI or CLI) + Expo Client](#chapter1b)
+    3. [Advanced: With react-native-cli + Xcode + Android Studio/Genymotion](#chapter1c)
 2. [Example React Native App with Firebase backend](#chapter2)
     1. [Clone repository and preparation](#chapter2a)
     2. [Setup your own Firebase account](#chapter2b)
@@ -101,7 +101,7 @@ The application should reload automatically once you save your changes.
 More details: See https://facebook.github.io/react-native/docs/getting-started.html
 
 
-## <a id="chapter1b"></a>ii. Most convenience: Expo Development Server (as GUI or CLI) + Expo Client
+## <a id="chapter1b"></a>ii. For most convenience: Expo Development Server (as GUI or CLI) + Expo Client
 
 ### First install the Expo Client App on your iOS or Android phone
 
@@ -232,16 +232,16 @@ We should try out both ways of starting our Development Server:
         Then `Expo Client` gets installed on the Emulator, and opens the app within it.
     
 
-## <a id="chapter1c"></a>iii. Advanced with react-native-cli + Xcode + Android Studio/Genymotion
+## <a id="chapter1c"></a>iii. Advanced: With react-native-cli + Xcode + Android Studio/Genymotion
 
 
 ### Before you start !
 
-- iOS Debugging: If you have Xcode installed, upgrade to latest version
+- iOS Setup: If you have Xcode installed, upgrade to latest version.
 
-- Android Debugging: If you have Android Studio installed, upgrade to latest version. It can also work WITHOUT Android Studio. Think about Genymotion, too.
+- Android Setup: If you have Android Studio installed, upgrade to latest version. It can also work WITHOUT Android Studio. Think about Genymotion, too.
 
-- Both: Upgrade Node.js to latest version
+- Both: Upgrade Node.js to latest version.
 
 
 ### Android Setup
@@ -340,7 +340,7 @@ Testing on your Device:
     https://facebook.github.io/react-native/docs/running-on-device.html
     
 
-## <a id="chapter2"></a>2. Example React Native App
+## <a id="chapter2"></a>2. Example React Native App with Firebase backend
 
 Great many thanks to Stephen Grider who showed me in his Udemy Course how to 
 setup Firebase and Authentication with his React Native App "Manager" which is the basis of this repo (see links below).
@@ -401,6 +401,7 @@ Steps:
 
     Open Database >> Rules and insert
     
+    ```
     {
       "rules": {
         "users": {
@@ -411,9 +412,11 @@ Steps:
         }
       }
     }
+    ```
 
 5. Go to Project Overview >> "Add Firebase to your web app" and copy the config parameters
 
+    ```
     config = {
         apiKey: "AIzaSyD_bli",
         authDomain: "bli.firebaseapp.com",
@@ -422,8 +425,9 @@ Steps:
         storageBucket: "bli.appspot.com",
         messagingSenderId: "bla"
     };
+    ```
     
-    Then replace the config parameters in `manager-app/src/app.js` with the above copied config parameters.
+    Then replace the config parameters in `manager_app/src/app.js` with the above copied config parameters.
 
   
 ### <a id="chapter2c"></a>iii. Run app on iOS Simulator
@@ -440,7 +444,7 @@ A cool side effect in Firebase is the visualization of live updates in its Realt
 
 Each time you insert/edit an employee, the employee pops up yellow under Database >> Realtime Database >> Data
         
-Have fun being manager ! But don't fire too many !
+Have fun being manager ! But don't fire too many of your peers !
 
 
 ## <a id="chapter3"></a>3. Links
@@ -468,7 +472,7 @@ React Native Components used:
     - https://github.com/aksonov/react-native-router-flux
     - https://medium.com/@Laurens_Lang/react-native-migrating-from-react-native-router-flux-to-react-navigation-7c47b1cc679c
 
-- Communication (not working in iOS Simulator, only on iOS Device)
+- Communication (not working in iOS Simulator)
     - https://github.com/anarchicknight/react-native-communications
 
 ### Credits to the authors of above links ! Thank you very much !
