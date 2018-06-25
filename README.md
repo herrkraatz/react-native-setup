@@ -401,6 +401,34 @@ setup Firebase and Authentication with his React Native App "Manager" which is t
     ```
     > npm install
     ```
+    
+    Troubleshooting if you found vulnerabilities (we ignore lodash's low severity)
+     
+    ```
+    [!] 2 vulnerabilities found [34587 packages audited]
+             Severity: 1 low | 1 high
+             Run `npm audit` for more detail
+    ```
+       
+    Check out:
+    
+    - https://nodesecurity.io/advisories/550
+    - https://github.com/facebook/react-devtools/issues/941
+    
+    Ways out: 
+    
+    - Try updating modules to latest version:
+    
+        ```
+        > npm install ws@5.2.1
+        > npm install react-devtools-core@3.2.3
+        ```
+        
+    - Try facebook's yarn package manager:
+    
+        - https://yarnpkg.com/lang/en/
+        - https://code.facebook.com/posts/1840075619545360/yarn-a-new-package-manager-for-javascript/
+
 
 ### <a id="chapter2b"></a>ii. Setting up your own Firebase account
 
