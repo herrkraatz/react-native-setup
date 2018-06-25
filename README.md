@@ -11,7 +11,7 @@ This tutorial shall help setting up your React Native environment and running yo
     3. [Advanced: With react-native-cli + Xcode + Android Studio/Genymotion](#chapter1c)
 2. [Example React Native App with Firebase backend](#chapter2)
     1. [Clone repository and preparation](#chapter2a)
-    2. [Setup your own Firebase account](#chapter2b)
+    2. [Setting up your own Firebase account](#chapter2b)
     3. [Run app on iOS Simulator](#chapter2c)
 3. [Links](#chapter3)
 
@@ -160,7 +160,8 @@ We should try out both ways of starting our Development Server:
     
     - `iOS Device`: 
     
-        Run `exp send -s +49151.....` in the same project directory, but in another terminal window (DON'T CLOSE the window above !) to send the URL to your device. 
+        Run `exp send -s +49151.....` in the same project directory, but in another terminal window (DON'T CLOSE the window above !) to send the URL to your device.
+        
         When the message arrived at your device, just click on the link and your first app gets opened within the Expo Client. 
     
     - `Android Device`:
@@ -202,6 +203,7 @@ We should try out both ways of starting our Development Server:
     - `iOS Device`: 
     
         Hit Share button (upper right corner) and hit "Send Link" to your mobile number `+49151.....`
+        
         When the message arrived at your device, just click on the link and your first app gets opened within the Expo Client. 
     
     - `Android Device`:
@@ -390,7 +392,7 @@ setup Firebase and Authentication with his React Native App "Manager" which is t
     > npm install
     ```
 
-### <a id="chapter2b"></a>ii. Setup your own Firebase account
+### <a id="chapter2b"></a>ii. Setting up your own Firebase account
 
 Steps:
 
