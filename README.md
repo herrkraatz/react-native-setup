@@ -385,8 +385,18 @@ setup Firebase and Authentication with his React Native App "Manager" which is t
     ```
     > cp manager_app_src/package.json manager_app
     ```
+ 
+5. Edit `manager_app/index.js` file:
+
+    `import App from './App';` becomes `import App from './src/app';`
     
-5. Finally cd into `manager_app` folder and run:
+6. Delete `manager_app/App.js` file:
+
+    ```
+    > rm App.js
+    ```
+    
+7. Finally cd into `manager_app` folder and run:
 
     ```
     > npm install
@@ -439,7 +449,7 @@ Steps:
 
 Now let's try it out on iOS Simulator !
 
-Cd into `manager-app` and just run:
+Cd into `manager-app` and run:
     
 ```
 > react-native run-ios
@@ -450,6 +460,16 @@ A cool side effect in Firebase is the visualization of live updates in its Realt
 Each time you insert/edit an employee, the employee pops up yellow under Database >> Realtime Database >> Data
         
 Have fun being manager ! But don't fire too many of your peers !
+
+
+#### Troubleshooting
+
+If the App only shows up a second in the iOS Simulator, please open Xcode and you'll probably see this under the
+General Tab: `Signing for "manager_test" requires a development team.`
+
+Solution: 
+- Hit Build Settings Tab and set Code Signing Identity >> Debug to your preferred Identity
+- Then hit Play in Xcode
 
 
 ## <a id="chapter3"></a>3. Links
