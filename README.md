@@ -2,12 +2,28 @@
 
 This tutorial shall help setting up your React Native environment and running your first React Native App.
 
-Here are the three standard options how to set it up:
+## Table of Contents
+
+1. [Getting Started - 3 Options](#chapter1)
+    1. [Quickstart with Create React Native App + Expo Client](#chapter1a)
+    2. [For most convenience: Expo Development Server (as GUI or CLI) + Expo Client + Expo SDK (Components)](#chapter1b)
+    3. [Advanced: With react-native-cli + Xcode + Android Studio/Genymotion](#chapter1c)
+2. [Example React Native App with Firebase backend](#chapter2)
+    1. [Clone repository and preparation](#chapter2a)
+    2. [Setting up your own Firebase account](#chapter2b)
+    3. [Run app on iOS Simulator](#chapter2c)
+3. [Links](#chapter3)
+
+
+## <a id="chapter1"></a>1. Getting Started - 3 Options
+
+### Here are the 3 standard options how to set it up:
 
 - For a quickstart use both
     - `Create React Native App` (https://github.com/react-community/create-react-native-app) as a boilerplate / base structure of your App
     - `Expo Client` (https://expo.io/) to do testing on your iOS / Android device
-    - To once leave the path of standard React Native Components / APIs you can "eject" from `Create React Native App`
+    
+    To once leave the path of standard React Native Components / APIs you can "eject" from `Create React Native App`
     
 - For most convenience (pre-configured components like Camera, Push Notifications, etc through `Expo SDK`) and if you're sure that you DO NOT leave the path of standard React Native Components / APIs, use 
     - `Expo Development Server as GUI or CLI` (https://expo.io/),
@@ -23,20 +39,14 @@ Here are the three standard options how to set it up:
     - you need to "eject" from `Create React Native App` in case you initially started with `Create React Native App`
 
 
-## Table of Contents
+### Node.js installed ? Needed for all 3 options !
 
-1. [Getting Started](#chapter1)
-    1. [Quickstart with Create React Native App + Expo Client](#chapter1a)
-    2. [For most convenience: Expo Development Server (as GUI or CLI) + Expo Client + Expo SDK (Components)](#chapter1b)
-    3. [Advanced: With react-native-cli + Xcode + Android Studio/Genymotion](#chapter1c)
-2. [Example React Native App with Firebase backend](#chapter2)
-    1. [Clone repository and preparation](#chapter2a)
-    2. [Setting up your own Firebase account](#chapter2b)
-    3. [Run app on iOS Simulator](#chapter2c)
-3. [Links](#chapter3)
+If you haven't Node.js installed on your machine, please install current (latest) version of Node.js ([By download](https://nodejs.org/en/download/), [By package manager](https://nodejs.org/en/download/package-manager/)).
 
+*Note: LTS version is more stable, but better use latest version as React Native is under permanent development, and chances are pretty high that RN developers use (at least partly) latest Node.js features instead of taking care of time consuming regression tests for all older Node.js versions. RN developers, please forgive me if I'm wrong.*
 
-## <a id="chapter1"></a>1. Getting Started
+This will install Node.js (JavaScript engine) on your machine, and allows JavaScript code to execute not only in your browser.
+Node.js also ships with npm package manager we will need below.
 
 *Notes:*
 
@@ -47,17 +57,6 @@ Here are the three standard options how to set it up:
     - Node.js version v9.11.1 (`node -v`)
     - Watchman version 4.9.0 (`watchman -v`)
     - React Native CLI version 2.0.1 (`react-native -v`)
-
-
-### Node.js installed ? Needed for all 3 options !
-
-If you haven't Node.js installed on your machine, please install current (latest) version of Node.js ([By download](https://nodejs.org/en/download/), [By package manager](https://nodejs.org/en/download/package-manager/)).
-
-*Note: LTS version is more stable, but better use latest version as React Native is under permanent development, and chances are pretty high that RN developers use (at least partly) latest Node.js features instead of taking care of time consuming regression tests for all older Node.js versions. RN developers, please forgive me if I'm wrong.*
-
-This will install Node.js (JavaScript engine) on your machine, and allows JavaScript code to execute not only in your browser.
-Node.js also ships with npm package manager we will need below.
-
 
 ## <a id="chapter1a"></a>i. Quickstart with Create React Native App + Expo Client
 
@@ -391,7 +390,7 @@ Debugging on your Device (see https://facebook.github.io/react-native/docs/debug
     4. For cool Live Reloading feature (also in Debugging Menu) your device needs to be on the same WiFi network as your machine
     
 
-IMPORTANT: Debugging Tools !
+### IMPORTANT: Debugging Tools !
 
 - Check out Standalone React Developer Tools for a proper React DOM tree and more: https://github.com/facebook/react-devtools/tree/master/packages/react-devtools
 - Check out Standalone React Native Debugger for integrated React DOM manipulation and Redux: https://github.com/jhen0409/react-native-debugger
