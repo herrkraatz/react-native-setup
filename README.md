@@ -410,7 +410,7 @@ Great many thanks to Stephen Grider who showed in his Udemy Course how to
 setup Firebase and Authentication with his React Native App "Manager" which is the basis of this repo (see links below).
 
 
-### <a id="chapter2a"></a>i Clone repository and preparation
+### <a id="chapter2a"></a>i. Clone repository and preparation
 
 1. First clone this repo into your preferred projects directory.
 
