@@ -390,7 +390,7 @@ Debugging on your Device (see https://facebook.github.io/react-native/docs/debug
     4. For cool Live Reloading feature (also in Debugging Menu) your device needs to be on the same WiFi network as your machine
     
 
-### IMPORTANT: Debugging Tools !
+### IMPORTANT: Debugging Tools for BOTH Simulator/Emulator AND Device !
 
 - Check out Standalone React Developer Tools for a proper React "DOM tree" and more: https://github.com/facebook/react-devtools/tree/master/packages/react-devtools
 - Check out Standalone React Native Debugger for integrated React "DOM" manipulation and Redux: https://github.com/jhen0409/react-native-debugger
