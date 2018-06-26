@@ -19,13 +19,13 @@ This tutorial shall help setting up your React Native environment and running yo
 
 ### Here are the 3 standard options how to set it up:
 
-- For a quickstart use both
+1. For a quickstart use both
     - `Create React Native App` (https://github.com/react-community/create-react-native-app) as a boilerplate / base structure of your App
     - `Expo Client` (https://expo.io/) to do testing on your iOS / Android device
     
     To once leave the path of standard React Native Components / APIs you can "eject" from `Create React Native App`
     
-- For most convenience (pre-configured components like Camera, Push Notifications, etc through `Expo SDK`) and if you're sure that you DO NOT leave the path of standard React Native Components / APIs, use 
+2. For most convenience (pre-configured components like Camera, Push Notifications, etc through `Expo SDK`) and if you're sure that you DO NOT leave the path of standard React Native Components / APIs, use 
     - `Expo Development Server as GUI or CLI` (https://expo.io/),
         - as GUI: Download `Expo XDE` (https://github.com/expo/xde/releases)
         - as CLI: Install `Expo CLI` using `npm install exp --global`
@@ -34,7 +34,7 @@ This tutorial shall help setting up your React Native environment and running yo
         - Installation: `npm install --save expo`
         - List of components: https://docs.expo.io/versions/latest/sdk/index.html (left column)
     
-- Advanced: If you need to integrate React Native into an existing native iOS / Android application OR want to create custom native modules beyond the standard React Native Components / APIs, 
+3. Advanced: If you need to integrate React Native into an existing native iOS / Android application OR want to create custom native modules beyond the standard React Native Components / APIs, 
     - you need to use `react-native-cli` along with Xcode and Android tools: See Tab "Building Projects with Native Code" on https://facebook.github.io/react-native/docs/getting-started.html
     - you need to "eject" from `Create React Native App` in case you initially started with `Create React Native App`
 
@@ -566,6 +566,12 @@ Boilerplates & Examples:
 - Stephen Grider Udemy Course: "React Native: Advanced Concepts": https://www.udemy.com/react-native-advanced/
 - McNamee: https://github.com/mcnamee/react-native-starter-kit
 - Facebook's Create React Native App: https://github.com/react-community/create-react-native-app
+
+Debugging:
+- How To: https://facebook.github.io/react-native/docs/debugging.html
+- How To: https://facebook.github.io/react-native/docs/running-on-device.html
+- Standalone React Developer Tools for a proper React DOM tree and more: https://github.com/facebook/react-devtools/tree/master/packages/react-devtools
+- Standalone React Native Debugger for integrated React DOM manipulation and Redux: https://github.com/jhen0409/react-native-debugger
 
 Styling:
 - Maximilian Schwarzmüller: Udemy Courses: "React Native - The Practical Guide": https://www.udemy.com/react-native-the-practical-guide/
