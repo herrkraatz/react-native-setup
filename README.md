@@ -2,6 +2,26 @@
 
 This tutorial shall help setting up your React Native environment and running your first React Native App.
 
+Here are the three standard options how to set it up:
+
+- For a quickstart use 
+    - `Create React Native App` (https://github.com/react-community/create-react-native-app) for a structured sample App to be used as your base AND
+    - `Expo Client` (https://expo.io/) to do testing on your iOS / Android device
+    - To once leave the path of standard React Native Components / APIs you can "eject" from `Create React Native App`
+    
+- For most convenience (pre-configured Components like Camera, Push Notifications, etc through `Expo SDK`) and if you're sure that you DO NOT leave the path of standard React Native Components / APIs, use 
+    - `Expo Development Server as GUI or CLI` (https://expo.io/),
+        - as GUI: Download `Expo XDE` (https://github.com/expo/xde/releases)
+        - as CLI: Install `Expo CLI` using `npm install exp --global`
+    - `Expo Client` (https://expo.io/) to do testing on your iOS / Android device
+    - `Expo SDK`:
+        - Installation: `npm install --save expo`
+        - List of Components: https://docs.expo.io/versions/latest/sdk/index.html (left column)
+    
+- Advanced: If you need to integrate React Native into an existing native iOS / Android application OR want to create custom native modules beyond the standard React Native Components / APIs, 
+    - you need to use `react-native-cli` along with Xcode and Android tools: See Tab "Building Projects with Native Code" on https://facebook.github.io/react-native/docs/getting-started.html
+    - you need to "eject" from `Create React Native App` in case you initially started with `Create React Native App`
+
 
 ## Table of Contents
 
@@ -27,24 +47,6 @@ This tutorial shall help setting up your React Native environment and running yo
     - Node.js version v9.11.1 (`node -v`)
     - Watchman version 4.9.0 (`watchman -v`)
     - React Native CLI version 2.0.1 (`react-native -v`)
-
-### What do you like to achieve? 3 Options.
-
-- For a quickstart use 
-    - `Create React Native App` (https://github.com/react-community/create-react-native-app) for a structured sample App to be used as your base AND
-    - `Expo Client` (https://expo.io/) to do testing on your iOS / Android device
-    - To once leave the path of standard React Native Components / APIs you can "eject" from `Create React Native App`
-    - Setting up testing on iOS Simulators / Android Emulators: See https://facebook.github.io/react-native/docs/getting-started.html
-- For most convenience (pre-configured Components like Camera, Push Notifications, etc through `Expo SDK`) and if you're sure that you DO NOT leave the path of standard React Native Components / APIs, use 
-    - `Expo Development Server as GUI or CLI` (https://expo.io/),
-        - as GUI: Download `Expo XDE` (https://github.com/expo/xde/releases)
-        - as CLI: Install `Expo CLI` using `npm install exp --global`
-    - `Expo Client` (https://expo.io/) to do testing on your iOS / Android device
-    - `Expo SDK`: `npm install --save expo`
-    - Setting up testing on iOS Simulators / Android Emulators: See https://docs.expo.io/versions/v28.0.0/workflow/debugging
-- Advanced: If you need to integrate React Native into an existing native iOS / Android application OR want to create custom native modules beyond the standard React Native Components / APIs, 
-    - you need to use `react-native-cli` along with Xcode and Android tools: See Tab "Building Projects with Native Code" on https://facebook.github.io/react-native/docs/getting-started.html
-    - you need to "eject" from `Create React Native App` in case you initially started with `Create React Native App`
 
 
 ### Node.js installed ? Needed for all 3 options !
@@ -100,7 +102,7 @@ On iOS, follow on-screen instructions to get a link.
 Open App.js in your text editor of choice and edit some lines. 
 The application should reload automatically once you save your changes.
 
-More details: See https://facebook.github.io/react-native/docs/getting-started.html
+More details on setting up testing on iOS Simulators / Android Emulators: https://facebook.github.io/react-native/docs/getting-started.html
 
 
 ## <a id="chapter1b"></a>ii. For most convenience: Expo Development Server (as GUI or CLI) + Expo Client + Expo SDK (Components)
@@ -115,7 +117,7 @@ More details: See https://facebook.github.io/react-native/docs/getting-started.h
 
     *Note: Your device should be on the same WiFi connection as your machine to make Live Reloads fast. Also works with 3G on device, but is much slower.*
     
-    We should try out both ways of starting our Development Server:
+    We should try out both ways of starting your local Development Server:
     
     1. The `Expo CLI` first:
     
@@ -175,7 +177,7 @@ More details: See https://facebook.github.io/react-native/docs/getting-started.h
             Shaking your device shows the menu. Enable Live Reloading, so that each change in, e.g. in screens/HomeScreen.js will 
             automatically be reloaded on device for debugging.
     
-        Testing on Simulators / Emulators:
+        Testing on Simulators / Emulators (see https://docs.expo.io/versions/v28.0.0/workflow/debugging)
         
         - `iOS Simulator`: 
         
@@ -217,7 +219,7 @@ More details: See https://facebook.github.io/react-native/docs/getting-started.h
             Shaking your device shows the menu. Enable Live Reloading, so that each change in, e.g. in screens/HomeScreen.js will 
             automatically be reloaded on device for debugging.
         
-        Testing on Simulators / Emulators:
+        Testing on Simulators / Emulators (see https://docs.expo.io/versions/v28.0.0/workflow/debugging)
         
         - `iOS Simulator`: 
         
