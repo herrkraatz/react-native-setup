@@ -97,12 +97,12 @@ Both: Connect to the same wireless network as your computer.
 On Android, use the Expo app to scan the QR code from your terminal to open your project. 
 On iOS, follow on-screen instructions to get a link.
 
-### Testing
+### Debugging
 
 Open App.js in your text editor of choice and edit some lines. 
 The application should reload automatically once you save your changes.
 
-More details on setting up testing on iOS Simulators / Android Emulators: https://facebook.github.io/react-native/docs/getting-started.html
+More details on setting up debugging on iOS Simulators / Android Emulators: https://facebook.github.io/react-native/docs/getting-started.html
 
 
 ## <a id="chapter1b"></a>ii. For most convenience: Expo Development Server (as GUI or CLI) + Expo Client + Expo SDK (Components)
@@ -159,7 +159,7 @@ More details on setting up testing on iOS Simulators / Android Emulators: https:
         
         ```
         
-        Testing on your Device:
+        Debugging on your Device:
         
         - `iOS Device`: 
         
@@ -177,7 +177,7 @@ More details on setting up testing on iOS Simulators / Android Emulators: https:
             Shaking your device shows the menu. Enable Live Reloading, so that each change in, e.g. in screens/HomeScreen.js will 
             automatically be reloaded on device for debugging.
     
-        Testing on Simulators / Emulators (see https://docs.expo.io/versions/v28.0.0/workflow/debugging)
+        Debugging on Simulators / Emulators (see https://docs.expo.io/versions/v28.0.0/workflow/debugging)
         
         - `iOS Simulator`: 
         
@@ -201,7 +201,7 @@ More details on setting up testing on iOS Simulators / Android Emulators: https:
         
         Then hit Project >> New Project >> Choose Blank or Tab Navigation and hit CREATE
         
-        Testing on your Device:
+        Debugging on your Device:
             
         - `iOS Device`: 
         
@@ -219,7 +219,7 @@ More details on setting up testing on iOS Simulators / Android Emulators: https:
             Shaking your device shows the menu. Enable Live Reloading, so that each change in, e.g. in screens/HomeScreen.js will 
             automatically be reloaded on device for debugging.
         
-        Testing on Simulators / Emulators (see https://docs.expo.io/versions/v28.0.0/workflow/debugging)
+        Debugging on Simulators / Emulators (see https://docs.expo.io/versions/v28.0.0/workflow/debugging)
         
         - `iOS Simulator`: 
         
@@ -315,40 +315,58 @@ CD into your preferred projects folder and let's call the app "my_rn_cli_project
 
 This will create another folder structure than Expo above.
 
-### Testing
+### Debugging
 
-Testing on Simulators / Emulators first:
+Debugging on Simulators / Emulators (see https://facebook.github.io/react-native/docs/debugging.html):
 
 - `iOS Simulator`: 
     
-    To try it out on iOS Simulator first, cd into `my_rn_cli_project` and run:
+    1. To try it out on iOS Simulator first, cd into `my_rn_cli_project` and run:
     
-    ```
-    > cd my_rn_cli_project
-    > react-native run-ios
-    ```
+        ```
+        > cd my_rn_cli_project
+        > react-native run-ios
+        ```
+        
+        *Note:*
+        This failed initially: 
+        xcrun: error: unable to find utility "instruments", not a developer tool or in PATH (https://stackoverflow.com/questions/39778607/error-running-react-native-app-from-terminal-ios)
+        Needed to set Command Line Tools Path in Xcode >> Preferences >> Locations
+        
+        Also see Tab "Building Projects with Native Code" on https://facebook.github.io/react-native/docs/getting-started.html
+       
+     2. Hit CMD+D in the Simulator to open the Debugging Menu, then choose "Debug JS Remotely"; then Chrome opens and you can open the Console (ALT+CMD+I)
     
-    *Note:*
-    This failed initially: 
-    xcrun: error: unable to find utility "instruments", not a developer tool or in PATH (https://stackoverflow.com/questions/39778607/error-running-react-native-app-from-terminal-ios)
-    Needed to set Command Line Tools Path in Xcode >> Preferences >> Locations
-    
-    Also see Tab "Building Projects with Native Code" on https://facebook.github.io/react-native/docs/getting-started.html
-           
 - `Android Emulator`:
 
-    Setup for Android is a bit tricky. You can either use
+    1. Setup for Android is a bit tricky. You can either use
     
-    - Android Studio: Follow Tab "Building Projects with Native Code" on https://facebook.github.io/react-native/docs/getting-started.html
-    - Genymotion: Follow https://medium.com/surabayadev/setting-up-react-native-android-without-android-studio-35a496e1dfa3
+        - Android Studio: Follow Tab "Building Projects with Native Code" on https://facebook.github.io/react-native/docs/getting-started.html
+        - Genymotion: Follow https://medium.com/surabayadev/setting-up-react-native-android-without-android-studio-35a496e1dfa3
 
-
-Testing on your Device:
-
-- `iOS Device`: 
+    2. When done, use
     
-    Easiest for me and most safe for you is to just provide this link :)
-    https://facebook.github.io/react-native/docs/running-on-device.html
+        ```
+        > cd my_rn_cli_project
+        > react-native run-android
+        ```
+                
+    3. Hit CMD+M in the Emulator to open the Debugging Menu
+
+
+Debugging on your Device (see https://facebook.github.io/react-native/docs/debugging.html and https://facebook.github.io/react-native/docs/running-on-device.html):
+
+- `iOS Device`:
+
+    1. First connect your device with the USB cable to your machine, then open Xcode Project `my_rn_cli_project/ios/my_rn_cli_project.xcodeproj` and hit Run.
+        
+        Toubleshooting: Also check out iOS - Tab on https://facebook.github.io/react-native/docs/running-on-device.html
+        
+    2. Shake your device to show Debugging Menu, then choose "Debug JS Remotely"; then Chrome opens and you can open the Console (ALT+CMD+I)
+    
+    3. Also check out https://facebook.github.io/react-native/docs/running-on-device.html
+    
+    4. For cool Live Reloading feature (also in Debugging Menu) your device needs to be on the same WiFi network as your machine
     
     Suggestions:
     
@@ -359,9 +377,24 @@ Testing on your Device:
     
 - `Android Device`:
 
-    Easiest for me and most safe for you is to just provide this link :)
-    https://facebook.github.io/react-native/docs/running-on-device.html
+    1. First check out Android - Tab on https://facebook.github.io/react-native/docs/running-on-device.html
     
+    2. Connect your device with the USB cable to your machine and run
+    
+        ```
+        > cd my_rn_cli_project
+        > react-native run-android
+        ```
+    
+    3. Again check out Android - Tab on https://facebook.github.io/react-native/docs/running-on-device.html
+    
+    4. For cool Live Reloading feature (also in Debugging Menu) your device needs to be on the same WiFi network as your machine
+    
+
+IMPORTANT: Debugging Tools !
+
+- Check out Standalone React Developer Tools for a proper React DOM tree and more: https://github.com/facebook/react-devtools/tree/master/packages/react-devtools
+- Check out Standalone React Native Debugger for integrated React DOM manipulation and Redux: https://github.com/jhen0409/react-native-debugger
 
 ## <a id="chapter2"></a>2. Example React Native App with Firebase backend
 
@@ -497,7 +530,7 @@ Steps:
 
 Now let's try it out on iOS Simulator !
 
-Cd into `manager-app` and run:
+Cd into `manager_app` and run:
     
 ```
 > react-native run-ios
@@ -513,7 +546,7 @@ Have fun being manager ! But don't fire too many of your peers !
 #### Troubleshooting
 
 If the App only shows up a second in the iOS Simulator, please open Xcode and you'll probably see this under the
-General Tab: `Signing for "manager_test" requires a development team.`
+General Tab: `Signing for "manager_app" requires a development team.`
 
 Solution: 
 - Hit Build Settings Tab and set Code Signing Identity >> Debug to your preferred Identity
