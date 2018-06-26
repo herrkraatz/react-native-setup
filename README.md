@@ -5,7 +5,7 @@ This tutorial shall help setting up your React Native environment and running yo
 Here are the three standard options how to set it up:
 
 - For a quickstart use both
-    - `Create React Native App` (https://github.com/react-community/create-react-native-app) for a boilerplate as your base
+    - `Create React Native App` (https://github.com/react-community/create-react-native-app) as a boilerplate / base structure of your App
     - `Expo Client` (https://expo.io/) to do testing on your iOS / Android device
     - To once leave the path of standard React Native Components / APIs you can "eject" from `Create React Native App`
     
