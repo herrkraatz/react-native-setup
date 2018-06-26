@@ -561,9 +561,9 @@ Getting started:
 - Facebook: https://facebook.github.io/react-native/docs/running-on-device.html
 
 Boilerplates & Examples:
-- Stephen Grider Repo: https://github.com/StephenGrider/ReactNativeReduxCasts
-- Stephen Grider Udemy Course: "The Complete React Native and Redux Course": https://www.udemy.com/the-complete-react-native-and-redux-course/
-- Stephen Grider Udemy Course: "React Native: Advanced Concepts": https://www.udemy.com/react-native-advanced/
+- Stephen Grider, Repo: https://github.com/StephenGrider/ReactNativeReduxCasts
+- Stephen Grider, Udemy Course "The Complete React Native and Redux Course": https://www.udemy.com/the-complete-react-native-and-redux-course/
+- Stephen Grider, Udemy Course: "React Native: Advanced Concepts": https://www.udemy.com/react-native-advanced/
 - McNamee: https://github.com/mcnamee/react-native-starter-kit
 - Facebook's Create React Native App: https://github.com/react-community/create-react-native-app
 
@@ -574,7 +574,7 @@ Debugging:
 - Standalone React Native Debugger for integrated React "DOM" manipulation and Redux: https://github.com/jhen0409/react-native-debugger
 
 Styling:
-- Maximilian Schwarzmüller: Udemy Courses: "React Native - The Practical Guide": https://www.udemy.com/react-native-the-practical-guide/
+- Maximilian Schwarzmüller, Udemy Courses: "React Native - The Practical Guide": https://www.udemy.com/react-native-the-practical-guide/
 
 React Native Components used:
 
