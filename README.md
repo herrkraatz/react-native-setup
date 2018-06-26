@@ -392,8 +392,8 @@ Debugging on your Device (see https://facebook.github.io/react-native/docs/debug
 
 ### IMPORTANT: Debugging Tools !
 
-- Check out Standalone React Developer Tools for a proper React DOM tree and more: https://github.com/facebook/react-devtools/tree/master/packages/react-devtools
-- Check out Standalone React Native Debugger for integrated React DOM manipulation and Redux: https://github.com/jhen0409/react-native-debugger
+- Check out Standalone React Developer Tools for a proper React "DOM tree" and more: https://github.com/facebook/react-devtools/tree/master/packages/react-devtools
+- Check out Standalone React Native Debugger for integrated React "DOM" manipulation and Redux: https://github.com/jhen0409/react-native-debugger
 
 ## <a id="chapter2"></a>2. Example React Native App with Firebase backend
 
@@ -570,8 +570,8 @@ Boilerplates & Examples:
 Debugging:
 - How To: https://facebook.github.io/react-native/docs/debugging.html
 - How To: https://facebook.github.io/react-native/docs/running-on-device.html
-- Standalone React Developer Tools for a proper React DOM tree and more: https://github.com/facebook/react-devtools/tree/master/packages/react-devtools
-- Standalone React Native Debugger for integrated React DOM manipulation and Redux: https://github.com/jhen0409/react-native-debugger
+- Standalone React Developer Tools for a proper React "DOM tree" and more: https://github.com/facebook/react-devtools/tree/master/packages/react-devtools
+- Standalone React Native Debugger for integrated React "DOM" manipulation and Redux: https://github.com/jhen0409/react-native-debugger
 
 Styling:
 - Maximilian Schwarzmüller: Udemy Courses: "React Native - The Practical Guide": https://www.udemy.com/react-native-the-practical-guide/
