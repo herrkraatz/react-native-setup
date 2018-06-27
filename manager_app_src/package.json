@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "Great thanks to Stephen Grider's ReactNativeReduxCasts/Manager App Repo, and his Udemy Course 'The Complete React Native and Redux Course', which were the basis of this code",
+  "repository": "git@github.com:herrkraatz/react-native-setup.git",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
