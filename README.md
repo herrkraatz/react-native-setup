@@ -556,16 +556,24 @@ Solution:
 
 ### Have a look !
 
-Getting started: 
-- Facebook: https://facebook.github.io/react-native/docs/getting-started.html
-- Facebook: https://facebook.github.io/react-native/docs/running-on-device.html
+Create React Native App (CRNA) Starter Kit: 
+- See Tab "Quickstart" on https://facebook.github.io/react-native/docs/getting-started.html
+- CRNA Repo: https://github.com/react-community/create-react-native-app
+- https://facebook.github.io/react-native/docs/running-on-device.html
+
+Expo:
+- Home: https://expo.io/
+- List of components: https://docs.expo.io/versions/latest/sdk/index.html (left column)
+
+React Native CLI:
+- See Tab "Building Projects with Native Code" on https://facebook.github.io/react-native/docs/getting-started.html
+- https://facebook.github.io/react-native/docs/running-on-device.html
 
 Boilerplates & Examples:
 - Stephen Grider, Repo: https://github.com/StephenGrider/ReactNativeReduxCasts
 - Stephen Grider, Udemy Course "The Complete React Native and Redux Course": https://www.udemy.com/the-complete-react-native-and-redux-course/
 - Stephen Grider, Udemy Course: "React Native: Advanced Concepts": https://www.udemy.com/react-native-advanced/
 - McNamee: https://github.com/mcnamee/react-native-starter-kit
-- Facebook's Create React Native App: https://github.com/react-community/create-react-native-app
 
 Debugging:
 - How To: https://facebook.github.io/react-native/docs/debugging.html
