@@ -36,7 +36,7 @@ This tutorial shall help setting up your React Native environment and running yo
     
 3. Advanced: If you need to integrate React Native into an existing native iOS / Android application OR want to create custom native modules beyond the standard React Native Components / APIs, 
     - you need to use `react-native-cli` along with Xcode and Android tools: See Tab "Building Projects with Native Code" on https://facebook.github.io/react-native/docs/getting-started.html
-    - you need to "eject" from `Create React Native App` in case you initially started with `Create React Native App`
+    - you need to "eject" from `Create React Native App` in case you initially started with `Create React Native App`: See https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md#ejecting-from-create-react-native-app
 
 
 ### Node.js installed ? Needed for all 3 options !
