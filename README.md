@@ -560,6 +560,8 @@ Create React Native App (CRNA) Starter Kit:
 - See Tab "Quickstart" on https://facebook.github.io/react-native/docs/getting-started.html
 - CRNA Repo: https://github.com/react-community/create-react-native-app
 - https://facebook.github.io/react-native/docs/running-on-device.html
+- React Native Home: https://facebook.github.io/react-native
+- React Native Repo: https://github.com/facebook/react-native
 
 Expo:
 - Home: https://expo.io/
@@ -569,6 +571,8 @@ Expo:
 React Native CLI:
 - See Tab "Building Projects with Native Code" on https://facebook.github.io/react-native/docs/getting-started.html
 - https://facebook.github.io/react-native/docs/running-on-device.html
+- React Native Home: https://facebook.github.io/react-native
+- React Native Repo: https://github.com/facebook/react-native
 
 Boilerplates & Examples:
 - Stephen Grider, Repo: https://github.com/StephenGrider/ReactNativeReduxCasts
