@@ -563,6 +563,7 @@ Create React Native App (CRNA) Starter Kit:
 
 Expo:
 - Home: https://expo.io/
+- Expo XDE: https://github.com/expo/xde/releases
 - List of components: https://docs.expo.io/versions/latest/sdk/index.html (left column)
 
 React Native CLI:
