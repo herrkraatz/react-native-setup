@@ -21,7 +21,7 @@ This tutorial shall help setting up your React Native environment and running yo
 
 1. For a quickstart use both
     - `Create React Native App` (https://github.com/react-community/create-react-native-app) as a boilerplate / base structure of your App
-    - `Expo Client` (https://expo.io/) to do testing on your iOS / Android device
+    - `Expo Client` (https://expo.io/) to do testing on your iOS / Android device or Simulators / Emulators
     
     To once leave the path of standard React Native Components / APIs you can "eject" from `Create React Native App`
     
@@ -29,7 +29,7 @@ This tutorial shall help setting up your React Native environment and running yo
     - `Expo Development Server as GUI or CLI` (https://expo.io/),
         - as GUI: Download `Expo XDE` (https://github.com/expo/xde/releases)
         - as CLI: Install `Expo CLI` using `npm install exp --global`
-    - `Expo Client` (https://expo.io/) to do testing on your iOS / Android device
+    - `Expo Client` (https://expo.io/) to do testing on your iOS / Android device or Simulators / Emulators
     - `Expo SDK`:
         - Installation: `npm install --save expo`
         - List of components: https://docs.expo.io/versions/latest/sdk/index.html (left column)
@@ -83,7 +83,70 @@ When done, run:
 > npm start
 ```
 
-This will start a development server for you.
+This will start a development server for you with this output:
+
+```
+> npm start
+
+> AwesomeProject@0.1.0 start /Users/User1/Desktop/Projects/react-native-setup/AwesomeProject
+> react-native-scripts start
+
+12:03:51 PM: Starting packager...
+Packager started!
+
+QR - CODE HERE
+QR - CODE HERE                                                           
+QR - CODE HERE                                                           
+QR - CODE HERE                                                           
+QR - CODE HERE                                                           
+QR - CODE HERE                                                      
+
+Your app is now running at URL: exp://192.168.14.18:19000
+
+View your app with live reloading:
+
+  Android device:
+    -> Point the Expo app to the QR code above.
+       (You'll find the QR scanner on the Projects tab of the app.)
+  iOS device:
+    -> Press s to email/text the app URL to your phone.
+  Emulator:
+    -> Press a (Android) or i (iOS) to start an emulator.
+
+Your phone will need to be on the same local network as this computer.
+For links to install the Expo app, please visit https://expo.io.
+
+Logs from serving your app will appear here. Press Ctrl+C at any time to stop.
+
+ › Press a to open Android device or emulator, or i to open iOS emulator.
+ › Press s to send the app URL to your phone number or email address
+ › Press q to display QR code.
+ › Press r to restart packager, or R to restart packager and clear cache.
+ › Press d to toggle development mode. (current mode: development)
+
+```
+
+Shortcut for iOS:
+
+```
+npm run ios
+```
+
+Documentation says: "Like npm start, but also attempts to open your app in the iOS Simulator if you're on a Mac and have it installed."
+
+Shortcut for Android:
+
+```
+npm run android
+```
+
+Documentation says: "Like npm start, but also attempts to open your app on a connected Android device or emulator. Requires an installation of Android build tools (see React Native docs for detailed setup)."
+
+*Note:*
+- If you run it the first time on a Simulator / Emulator, the Expo Client will be installed automatically on the Simulator / Emulator.
+
+
+If you want to run it on a device, follow next step:
 
 ### Install the Expo Client App on your iOS or Android phone
 
@@ -95,6 +158,22 @@ Both: Connect to the same wireless network as your computer.
 
 On Android, use the Expo app to scan the QR code from your terminal to open your project. 
 On iOS, follow on-screen instructions to get a link.
+
+### Folder structure under root (first level)
+
+```
+.expo [folder]
+node_modules [folder]
+.babelrc
+.gitignore
+.watchmanconfig
+App.js
+app.json
+App.test.js
+package.json
+package-lock.json
+README.md
+```
 
 ### Debugging
 
@@ -254,6 +333,26 @@ More details on setting up debugging on iOS Simulators / Android Emulators: http
     Make sure you're using the most current SDK version. At the time of writing we were on Version 28.0.0
          
 
+### Folder structure under root (first level)
+
+```
+.expo [folder]
+__tests__ [folder]
+assets [folder]
+components [folder]
+constants [folder]
+navigation [folder]
+node_modules [folder]
+screens [folder]
+.babelrc
+.gitignore
+.watchmanconfig
+App.js
+app.json
+package.json
+package-lock.json
+```
+
 ## <a id="chapter1c"></a>iii. Advanced: With react-native-cli + Xcode + Android Studio/Genymotion
 
 
@@ -388,7 +487,26 @@ Debugging on your Device (see https://facebook.github.io/react-native/docs/debug
     3. Again check out Android - Tab on https://facebook.github.io/react-native/docs/running-on-device.html
     
     4. For cool Live Reloading feature (also in Debugging Menu) your device needs to be on the same WiFi network as your machine
-    
+
+
+### Folder structure under root (first level)
+
+```
+android [folder]
+ios [folder]
+node_modules [folder]
+.babelrc
+.buckconfig
+.flowconfig
+.gitattributes
+.gitignore
+.watchmanconfig
+App.js
+app.json
+index.js
+package.json
+package-lock.json
+```
 
 ### IMPORTANT: Debugging Tools for BOTH Simulator/Emulator AND Device !
 
