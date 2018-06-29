@@ -159,11 +159,13 @@ Both: Connect to the same wireless network as your computer.
 On Android, use the Expo app to scan the QR code from your terminal to open your project. 
 On iOS, follow on-screen instructions to get a link.
 
-### Folder structure under root (first level)
+### Folder Structure
 
 ```
-.expo [folder]
-node_modules [folder]
+.expo/
+  packager-info.json
+  settings.json
+node_modules/
 .babelrc
 .gitignore
 .watchmanconfig
@@ -333,17 +335,33 @@ More details on setting up debugging on iOS Simulators / Android Emulators: http
     Make sure you're using the most current SDK version. At the time of writing we were on Version 28.0.0
          
 
-### Folder structure under root (first level)
+### Folder Structure
 
 ```
-.expo [folder]
-__tests__ [folder]
-assets [folder]
-components [folder]
-constants [folder]
-navigation [folder]
-node_modules [folder]
-screens [folder]
+.expo/
+  packager-info.json
+  settings.json
+__tests__/
+  App-test.js
+assets/
+  fonts/
+  images/
+components/
+  __tests__/
+    StyledText-test.js
+  StyledText.js
+  TabBarIcon.js
+constants/
+  Colors.js
+  Layout.js
+navigation/
+  AppNavigator.js
+  MainTabNavigator.js
+node_modules/
+screens/
+  HomeScreen.js
+  LinksScreen.js
+  SettingsScreen.js
 .babelrc
 .gitignore
 .watchmanconfig
@@ -411,7 +429,37 @@ CD into your preferred projects folder and let's call the app "my_rn_cli_project
 > react-native init my_rn_cli_project
 ```
 
-This will create another folder structure than Expo above.
+### Folder Structure
+
+```
+android/
+  app/
+  gradle/
+  keystores/
+  build.gradle
+  gradle.properties
+  gradlew
+  gradlew.bat
+  settings.gradle
+ios/
+  react_native_clean_setup/
+  react_native_clean_setup.xcodeproj/
+  react_native_clean_setup-tvOS/
+  react_native_clean_setup-tvOSTests/
+  react_native_clean_setupTests/
+node_modules/
+.babelrc
+.buckconfig
+.flowconfig
+.gitattributes
+.gitignore
+.watchmanconfig
+App.js
+app.json
+index.js
+package.json
+package-lock.json
+```
 
 ### Debugging
 
@@ -488,25 +536,6 @@ Debugging on your Device (see https://facebook.github.io/react-native/docs/debug
     
     4. For cool Live Reloading feature (also in Debugging Menu) your device needs to be on the same WiFi network as your machine
 
-
-### Folder structure under root (first level)
-
-```
-android [folder]
-ios [folder]
-node_modules [folder]
-.babelrc
-.buckconfig
-.flowconfig
-.gitattributes
-.gitignore
-.watchmanconfig
-App.js
-app.json
-index.js
-package.json
-package-lock.json
-```
 
 ### IMPORTANT: Debugging Tools for BOTH Simulator/Emulator AND Device !
 
