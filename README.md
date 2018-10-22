@@ -2,6 +2,42 @@
 
 This tutorial shall help setting up your React Native environment and running your first React Native App.
 
+IMPORTANT UPDATE: As of https://github.com/react-community/create-react-native-app#getting-started the new way of getting stared
+
+- for Option 1 below is:
+
+```
+> npm install -g expo-cli
+> expo init AwesomeProject
+> cd AwesomeProject
+> npm start
+```
+
+instead of
+
+```
+> npm install -g create-react-native-app
+> create-react-native-app AwesomeProject
+> cd AwesomeProject
+> npm start
+```
+
+- for Option 3 below is:
+
+```
+> npm install -g expo-cli
+> expo init AwesomeProject
+> cd AwesomeProject
+> npm run eject
+```
+
+instead of
+
+```
+> npm install -g react-native-cli
+> react-native init my_rn_cli_project
+```
+
 ## Table of Contents
 
 1. [Getting Started - 3 Options](#chapter1)
@@ -417,7 +453,6 @@ iOS Projects are a bit easier to set up than Android Projects:
     ```
     > npm install -g react-native-cli
     ```
-
 
 ### Create first React Native App with React Native CLI
 
