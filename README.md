@@ -2,9 +2,9 @@
 
 This tutorial shall help setting up your React Native environment and running your first React Native App.
 
-IMPORTANT UPDATE: As of https://github.com/react-community/create-react-native-app#getting-started the new way of getting stared
+IMPORTANT UPDATE: As of https://github.com/react-community/create-react-native-app#getting-started the new way of getting started ...
 
-- for Option 1 below is:
+- ... for Option 1 below is:
 
 ```
 > npm install -g expo-cli
@@ -22,7 +22,7 @@ instead of
 > npm start
 ```
 
-- for Option 3 below is:
+- ... for Option 3 below is:
 
 ```
 > npm install -g expo-cli
@@ -37,6 +37,8 @@ instead of
 > npm install -g react-native-cli
 > react-native init my_rn_cli_project
 ```
+
+If Debugging Menu not opening on iOS Simulator (CMD+D), try react-native version 0.55.4 instead of latest version.
 
 ## Table of Contents
 
