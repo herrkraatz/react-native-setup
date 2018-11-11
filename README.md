@@ -22,23 +22,20 @@ instead of
 > npm start
 ```
 
-- ... for Option 3 below is:
+- ... for Option 3 below DO NOT USE:
 
 ```
-> npm install -g expo-cli
 > expo init AwesomeProject
 > cd AwesomeProject
 > npm run eject
 ```
 
-instead of
+But still use of
 
 ```
-> npm install -g react-native-cli
 > react-native init my_rn_cli_project
 ```
 
-If Debugging Menu not opening on iOS Simulator (CMD+D), try react-native version 0.55.4 instead of latest version.
 
 ## Table of Contents
 
