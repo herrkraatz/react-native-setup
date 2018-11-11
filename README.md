@@ -30,7 +30,7 @@ instead of
 > npm run eject
 ```
 
-But still use of
+But still use:
 
 ```
 > react-native init my_rn_cli_project
