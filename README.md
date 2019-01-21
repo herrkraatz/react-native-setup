@@ -37,7 +37,8 @@ But still use:
 ```
 
 
-IMPORTANT CAUTION: The npm packages might have discovered vulnerabilities by now. 
+### IMPORTANT CAUTION: 
+The npm packages might have discovered vulnerabilities by now. 
 So do not use the combination of our npm versions in your production environment, but within a test environment instead that is sandboxed from your production network.
 Unfortunately the author has no time right now to always keep the npm packages at their latest versions. The tuturial is supposed to show how it works and should help building working prototypes to make life easier for you.
 
